@@ -49,10 +49,13 @@ nav.bg {
 	
 
 }
-.p {
-      margin-left: 20px;
-    color: #d9d9d9;
+.fone {
+    color: white;
+    margin-left: 2rem;
+    font-size: 1.5rem;
 }
+
+
 nav a {
 
 	position: relative;
@@ -174,6 +177,9 @@ nav a:focus {
     font-weight: 800;
     margin: 0;
 }
+.presentation > img {
+margin-top: 5rem;    
+}
 .article-presentation {
     display: flex;
     flex-direction: row;
@@ -183,6 +189,7 @@ nav a:focus {
     display:flexbox;
     margin: 0 2.5rem;
 }
+
 /* CARROSSEL*/
 .carousel-inner > .item > img{
     width: 20%;
