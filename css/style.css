@@ -202,7 +202,10 @@ margin-top: 5rem;
 .container {
     padding: 5rem 7.5rem;
     text-align: center;
+    color: #080000;
+    font-size: 2.5rem;
 }
+
    
 .container-formacao-academica {
     padding: 5rem 7.5rem;
@@ -213,10 +216,12 @@ margin-top: 5rem;
     text-align: center;
 }
 .contact-title {
-    margin: .5rem;
+    margin: .4rem;
 }
 .container > p {
     margin-top: 1.5rem;
+    
+    
 }
 .container > button {
     margin-top: 2rem;
@@ -227,12 +232,15 @@ margin-top: 5rem;
     transform: scale(1.1);
 }
 .background-gradient {
-    background: linear-gradient(180deg, #fff, #d9d9d9);
+    background: linear-gradient(180deg, #fff, #5b52da);
 }
 .background-color-red {
-    background-color: red;
-    color: #ece4e4;
-    font-size: 1rem;
+    background: linear-gradient(180deg, #fff, #70d4bb);
+    color: #080000;
+    font-size: 1.5rem;
+}
+.contato > p {
+    text-align: center;
 }
 .background-grey {
     background-color: #ec2121;
@@ -293,7 +301,7 @@ height: 40px;
 background-color: #EAECE5;
 margin: 15px;
 border: 0px;
-border-radius: 5px;
+border-radius: 10px;
 padding-left: 10px;
 
 }
@@ -303,10 +311,14 @@ height: 40px;
 width: 250px;
 color: #eaece5;
 border: 0px;
-border-radius: 5px;
+border-radius: 10px;
 margin: 50px;
 font-weight: bolder;
 cursor: pointer;
+
+}
+textarea {
+    border-radius: 10px;
 
 }
 
@@ -586,50 +598,3 @@ nav a {
 
 }
 }
-/* CUBOS 3D
-
-/* Define o contêiner da cena 3D e adiciona perspectiva */
-.container-cube {
-    
-    justify-content: center;
-    background-color: #d9d9d9;
-    width: 400px;
-    height: 400px;
-    perspective: 600px; /* Adiciona profundidade para o efeito 3D */
-}
-.scene {
-    width: 200px;
-    height: 200px;
-    perspective: 600px; /* Adiciona profundidade para o efeito 3D */
-}
-/* Define o cubo e seus efeitos 3D */
-.cube {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d; /* Mantém os elementos filhos no espaço 3D */
-    transition: transform 1s; /* Suaviza a rotação do cubo */
-}
-h1 {
-    color: rgb(10, 10, 6);
-    font-size: 10px;
-    margin-left: 60px;
-}
-/* Estiliza as faces do cubo */
-.cube div {
-position: absolute;
-width: 200px;
-height: 200px;
-background-size: contain; /* Garante que a imagem se ajuste sem corte */
-background-position: center;
-background-repeat: no-repeat; /* Impede a repetição das imagens */
-/*border: 2px solid #ffffff;*/ /* inibe borda do cubo*/
-display: flex;
-justify-content: center;
-align-items: center;
-}
-/* Define as posições das faces do cubo */
-.front  { transform: rotateY(  0deg) translateZ(100px); }
-.back   { transform: rotateY(180deg) translateZ(100px); }
-.right  { transform: rotateY( 90deg) translateZ(100px); }
-.left   { transform: rotateY(-90deg) translateZ(100px); }
