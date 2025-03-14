@@ -28,12 +28,13 @@ h3 {
 /* Menu nav */
 
 nav.bg {
+    display: flex;
     font-family:'manrope', sans-serif;
     width:100%;
     float:left; 
     text-align:start;  
     background: linear-gradient(90deg, #fff, #70d4bb);
-    position: fixed;
+    position: relative;
     align-items: center;
     
 	
@@ -43,13 +44,14 @@ nav.bg {
     color: rgb(8, 1, 1);
     margin-left: 2rem;
     font-size: 1rem;
+    
 }
 
 
 nav a {
 
 	position: relative;
-	display: inline-flex;
+	display:flexbox;
 	margin: 16px 20px;
 	outline: none;
 	color: #fff;
@@ -57,6 +59,10 @@ nav a {
 	font-weight: bold;
 	font-size: 1.5rem;
 
+}
+p {
+    font-size: 1,5rem;
+    position:static;
 }
 
 nav a:hover,
@@ -68,7 +74,7 @@ nav a:focus {
 }
 
 /*Menu 3D*/
-.menu-3d a {
+.cabecalho a {
     font-size: 1.5rem;
 	line-height: 30px;
 	overflow: hidden;
@@ -78,8 +84,12 @@ nav a:focus {
 	border-radius: 10px;
     color: black;
 }
+.cabecalho p{
+    display: flexbox;
+    margin-left: 20px;
+}
 
-.menu-3d a span {
+.cabecalho a span {
 	position: relative;
 	display: inline-block;
 	padding: .5 14px;
@@ -96,7 +106,7 @@ nav a:focus {
 	transform-style: preserve-3d;
 }
 
-.menu-3d a span::before {
+.cabecalho a span::before {
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -115,15 +125,15 @@ nav a:focus {
 	transform-origin: 50% 0;
 }
 
-.menu-3d a:hover span,
-.menu-3d a:focus span {
+.cabecalho a:hover span,
+.cabecalho a:focus span {
 	-webkit-transform: rotateX(90deg) translateY(-22px);
 	-moz-transform: rotateX(90deg) translateY(-22px);
 	transform: rotateX(90deg) translateY(-22px);
 }
 
-.menu-3d a:hover span::before,
-.menu-3d a:focus span::before {
+.cabecalho a:hover span::before,
+.cabecalho a:focus span::before {
     color: black;
     text-align: center;
     background: rgb(226, 233, 226);
@@ -189,6 +199,8 @@ margin-top: 5rem;
 
    
 .container-formacao-academica {
+    background: rgb(9, 7, 138);
+    background: linear-gradient(169deg, rgba(238,174,202,1) 21%, rgba(138,164,195,1) 100%);
     padding: 5rem 7.5rem;
     text-align: center;
 }
@@ -218,14 +230,12 @@ margin-top: 5rem;
 .background-color-red {
     background-color: #e22525;
     color: #080000;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .contato > p {
     text-align: center;
 }
-.background-grey {
-    background-color: #ec2121;
-}
+
 .article-container {
     display: flex;
     flex-direction: row;
@@ -294,9 +304,6 @@ color: #eaece5;
 border: 0px;
 border-radius: 10px;
 font-size: 25px
-margin: 20px;
-font-weight: bolder;
-cursor: pointer;
 
 }
 
@@ -609,5 +616,9 @@ input{
         padding: 10px;
         border-radius: 10px;
         font-size: 1rem;
+    }
+    p {
+        font-size: 1rem;
+        position:static;
     }
 }
